@@ -1,0 +1,33 @@
+GET http://localhost:8000/api/v1/polish
+
+###
+
+GET http://localhost:8000/polish/6392679615fad50fafa9fa60
+
+###
+
+POST http://localhost:8000/polish
+Content-Type: application/json 
+
+{
+    "name": "Rue Morgue",
+    "brand": "Mooncat",
+    "color": "blue",
+    "type": "matte"
+}
+
+###
+
+PATCH http://localhost:8000/polish/6392679615fad50fafa9fa60
+Content-Type: application/json 
+
+{
+    "name": "Raven",
+    "brand": "Mooncat",
+    "color": "purple",
+    "type": "matte"
+}
+
+###
+
+DELETE http://localhost:8000/polish/63926adb39e7652a74b25f4b
